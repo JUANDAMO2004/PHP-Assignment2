@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1,h3, label{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navbar-nav{
+    background-color: #EBAD00;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header li{
+    list-style: none;
+}
+.nav-link{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    color:whitesmoke;
+    padding: 10px ; 
+    border-radius: 20px;
+    text-decoration: none; 
+    background-color: cornflowerblue;
+}
+.nav-link:hover {
+    background-color: lightblue; 
+    color: navy; 
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sign-up-container{
+    background-image: url(../images/jungle2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 15%;
+}
+.sign-up-form{
+    background-color:rgba(240, 230, 140, 0.7);
+    padding: 15px 0px 15px;
+    border-radius: 100px;
+}
+.sign-up-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input::placeholder {
+    color: black;
+    text-align: center;
+}
+span{
+    color:red;
+}
+.sign-up-form form a{
+    color:rgb(21, 70, 21);
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    padding:5px;  
+}
+.sign-up-form form a:hover{
+    text-shadow: 0px 0px 5px;
+    text-decoration: underline;
+}
+.sign-up-form input,
+.sign-in-form input,
+.edit-form input{
+    padding:12px 0;/*padding: top, right, bottom, left */
+    margin: 10px 0; /*Margin: top, right, bottom, left */
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+.sign-in-container{
+    background-image: url(../images/iceland_aurora.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    padding: 15%;
+}
+.sign-in-form{
+    background-color:rgb(152, 81, 236, 0.7);
+    margin:20px 100px 20px;
+    padding: 15px;
+    border-radius:100px;
+}
+.sign-in-form form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign-in-form form a{
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    padding:5px;  
+}
+.sign-in-form form a:hover{
+    text-shadow: 0px 0px 5px;
+    text-decoration: underline;
+}
+#button1 {
+    border-radius: 4px;
+    background-color:#EAE87E;
+    border: solid 2px black;
+    color:rgb(42, 133, 42);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 12px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    text-shadow: 0px 0px 5px;
+}
+#button2 {
+    border-radius: 4px;
+    background-color:rgb(173, 69, 173);
+    border: solid 2px black;
+    color:rgb(73, 2, 73);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 12px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    text-shadow: 0px 0px 5px;
+}
+#button1:hover,
+#button2:hover,
+#upload:hover,
+.close button:hover
+{
+    padding-right: 24px;
+    padding-left:8px;
+}
+  
+footer{
+    background-color: darkslategrey;
+    padding: 2.5%; 
+}
+
+.footer-container{
+    display: grid;
+    grid-gap: 35px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 15% 30% 20% 28%;
+}
+footer h3{
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+footer p{
+    color: antiquewhite;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+
+}
+#footerPic {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+/*TABLE CSS*/
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin:5px;
+}
+table{
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+}
+th{
+    font-family: 'Poppins', sans-serif; 
+    padding:5px;
+    background-color: cadetblue;
+}
+td{
+    background-color:khaki;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+td:hover{
+    background-color: rgb(170, 211, 108);
+    color: green; 
+}
+tbody tr{
+    border-bottom: 2px solid rgb(138, 137, 137,0.5);
+}
+
+.model{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height:80%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0,0,0, 0.9);
+}
+.model-content{
+    margin:auto;
+    display: block;
+    width: auto;
+    /*max-width: 700px;*/
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close button{
+    border-radius: 4px;
+    background-color:grey;
+    border: solid 2px whitesmoke;
+    color:rgb(27, 25, 27);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 12px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    text-shadow: 0px 0px 5px;
+}
+.edit-container{
+    background-image: url(../images/twilight.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    padding: 15%;
+}
+.edit-form{
+    background-color:rgba(241, 95, 10, 0.7);
+    margin:20px 100px 20px;
+    padding: 15px;
+    border-radius:100px;
+}
+.edit-form form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edit-form form a{
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    padding:5px;  
+}
+.edit-form form a:hover{
+    text-shadow: 0px 0px 5px;
+    text-decoration: underline;
+}
+
+
